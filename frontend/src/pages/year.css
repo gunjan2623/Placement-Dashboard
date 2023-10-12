@@ -1,0 +1,28 @@
+.head{
+    position: relative;
+    top:30px;
+    font-size: 40px;
+    color: #031358;
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+    margin-left:15%; 
+    margin-right:15%;
+    /* border: 1px solid; */
+    position: relative;
+    top:50px;
+  }
+ 
+  th,td {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+  }
+  
+  tr:nth-child(even) {
+    background-color:#ece9f8;
+    /* border-bottom: 1px solid; */
+  } 

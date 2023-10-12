@@ -1,0 +1,46 @@
+* {
+  --co: black;
+}
+.fila {
+  position: relative;
+  top: 30px;
+  display: flex;
+  padding: 10px 60px;
+  font-size: 25px;
+
+}
+.allcomp,
+.allyear,
+.compwise {
+  padding: 5px 30px;
+  text-decoration: none;
+  background-color: rgb(223, 241, 241);
+  font-size: 20px;
+  margin-left: 60px;
+}
+.apply {
+  position: relative;
+  border: none;
+  transition: 0.4s ease-in;
+  z-index: 1;
+  /* background-color: var(--butcol); */
+  background-color: rgb(175, 119, 227);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.apply::before,
+.apply::after {
+  position: absolute;
+  content: "";
+  z-index: -2;
+}
+.apply:hover {
+  background: rgb(185, 75, 228);
+  box-shadow: 0 0 5px rgb(185, 75, 228), 0 0 25px rgb(185, 75, 228),
+    0 0 200px rgb(185, 75, 228);
+}

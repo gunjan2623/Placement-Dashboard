@@ -1,0 +1,16 @@
+.bar1
+{
+    position:relative;
+    top:90px;
+}
+.head1{
+    font-size:40px;
+}
+.xlabel{
+    height:80px;
+    margin-left: 50%;
+    padding :60px 0px 0px 0px;
+    font-size:30px;
+    bottom:0;
+    font:"Titillium Web",sans-sheriff;
+}

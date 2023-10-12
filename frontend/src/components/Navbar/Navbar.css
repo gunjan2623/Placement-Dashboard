@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+} */
+
+:root {
+  --mainColor: #29335c;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #160000;
+  --textColor: #eee;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background: var(--navbg);
+  color: var(--navtxt);
+  position: sticky;
+  top:0;
+  z-index: 999;
+  width: 100%;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--navtxt);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--navhov);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+li {
+  list-style-type: none;
+  margin: 0 50px 0 0;
+}
+li:hover {
+  background-color: #485db1;
+}
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background: var(--navbg);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+
+.placedrop {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.place-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 12, 12);
+}
+.place-icon:hover {
+  filter: brightness(1.2);
+}
+.dropdown {
+  position: absolute;
+  top: 58px;
+  width: 300px;
+  transform: translate(-45%);
+  background-color: #231b1b;
+  overflow: hidden;
+}
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: background 0.2;
+  padding: 0.5rem;
+}
+.menu-item:hover {
+  background-color: cornflowerblue;
+}
+
+.right-icon {
+  margin-left: auto;
+}
+
+.dark {
+  position: relative;
+  border: none;
+  transition: 0.4s ease-in;
+  z-index: 1;
+  background: var(--butcol);
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20%;
+}
+
+.dark::before,
+.dark::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+.dark:hover {
+  background: var(--darkbg);
+  box-shadow: var(--darkhov);
+}

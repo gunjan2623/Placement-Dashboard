@@ -1,0 +1,20 @@
+.contact
+{
+
+    flex: 1;
+    margin: 0px 20px;
+    padding: 30px;
+ 
+    cursor: pointer;
+    position:relative;
+    background-color:  #C8C7F7;
+    width:900px;
+    top:80px;
+    left:300px;
+     height:500px;
+    /* -webkit-box-shadow: 9px 5px 15px 5px #000000;  */
+     /* box-shadow: 9px 5px 15px 5px #000000; */
+     color:rgb(4, 4, 78);
+     text-align: center;
+   
+}

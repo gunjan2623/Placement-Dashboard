@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  background-color: var(--bg);
+}
+.dark-theme {
+  /* --bg: rgb(71, 71, 71); */
+  --navbg: #24272e;
+  --navtxt: #90ee90;
+  --navhov: #236313;
+  --butcol: linear-gradient(135deg, #90ee90, #94c500);
+  --darkhov: 0 0 5px rgb(76, 180, 55), 0 0 25px rgb(223, 239, 222),
+    0 0 200px rgb(146, 246, 74);
+  --darkbg: rgb(156, 254, 121);
+
+  /* --textColor: #eee; */
+}
+
+.light-theme {
+  /* --bg: rgba(15, 0, 0, 0.781); */
+  --navbg: #B28DFF;
+
+  --navtxt: rgb(7, 40, 79);
+  --navhov: white;
+  --fibut: linear-gradient(135deg, #1062f0, #003cc5);
+  --butcol: rgb(50, 8, 110);
+  --filbg: rgb(53, 167, 224);
+  --darkhov: 0 0 5px  rgb(50, 8, 110), 0 0 25px rgb(50, 8, 110),
+    0 0 200px  rgb(50, 8, 110);
+  --darkbg:rgb(50, 8, 110) ;
+  /* --textColor: #ffffff; */
+}
+
+.PlaceRep,
+.year,
+.statistic,
+.support,
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--sbutttext);
+  background-color: var(--back);
+}
